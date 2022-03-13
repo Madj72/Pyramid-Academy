@@ -25,6 +25,6 @@ class GuessingTwoTest {
 
     @Test
     void doYouWannaPlayAgain() {
-        //Still searching on how to Mock a User Input in a test;
+        //Still searching on how to Mock a User Input in a console test;
     }
 }

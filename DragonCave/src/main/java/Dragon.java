@@ -11,25 +11,31 @@ public class Dragon {
                 "Which cave will you go into?(1 or 2)");
 
         try {
-            guessingTheDragon(sc);
+            int userInput = sc.nextInt();
+            guessingTheDragon(userInput);
         } catch (Exception exception) {
                 exception.getStackTrace();
         }
     }
 
+    public static String guessingTheDragon(int userInput) {
 
-    public static void guessingTheDragon(Scanner sc) {
 
-        int userInput = sc.nextInt();
         if (userInput == 1) {
-            System.out.println("You approach the cave...\n" +
+            System.out.print("You approach the cave...\n" +
                     "It is dark and spooky...\n" +
                     "A large gradon jumps out in front of you! He opens his jaws and ...\n" +
                     "Gobbles you down in one bite!");
+            return "You approach the cave...\n" +
+                    "It is dark and spooky...\n" +
+                    "A large gradon jumps out in front of you! He opens his jaws and ...\n" +
+                    "Gobbles you down in one bite!";
         } else if (userInput == 2) {
             System.out.println("the dragon wants to say Hi!!");
+            return "the dragon wants to say Hi!!";
         } else {
             System.out.println("Please enter a value 1 or 2 !");
+            return "Please enter a value 1 or 2 !";
         }
     }
 }

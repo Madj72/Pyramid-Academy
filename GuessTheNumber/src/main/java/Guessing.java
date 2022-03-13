@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -17,6 +18,7 @@ public class Guessing {
         boolean guessed = false;
         System.out.println("Take a guess.");
         loop(guessed,userName,randomNumber,trials);
+
 
     }
     static void loop (boolean guessed, String userName,int randomNumber, int trials){
